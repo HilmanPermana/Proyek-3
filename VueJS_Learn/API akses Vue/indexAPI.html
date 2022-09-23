@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8" />
+        <!-- Import Vue.js -->
+        <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    </header>
+    <body>
+        <div id="app">
+            <h1>Bitcoin Price Index</h1>
+            <div v-for="currency in info" class="currency">
+                {{currency.description}}:
+                <span class="lighten">
+                    <span v-html="currency.symbol"></span>
+                    {{currency.rate_float | currencydecimal}}
+                </span>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+</html>
