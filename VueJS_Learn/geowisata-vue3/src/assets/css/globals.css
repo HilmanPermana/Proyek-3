@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,500,600,200|Lexend+Deca:400,700,300,600,200|Volkhov:400,700|Inter:700|Montserrat:400,500|Open+Sans:400,600");
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
